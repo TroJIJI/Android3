@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    android:background="@color/teal_700"
+    tools:context=".GameActivity">
+    <TextView
+        android:id="@+id/level_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="1 level"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/question_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Сколько лет Сулеймановy Нургазы?"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        app:layout_constraintTop_toBottomOf="@id/level_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <EditText
+        android:id="@+id/answer_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите ответ "
+        android:background="@color/purple_200"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textColorHighlight="@color/teal_200"
+        app:layout_constraintTop_toBottomOf="@id/question_tv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:id="@+id/send_Bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ответить"
+        android:textSize="24sp"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@id/answer_tv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/purple_500"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Следующий уровень"
+        android:onClick="NextLevel"
+        app:layout_constraintTop_toBottomOf="@id/send_Bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/purple_500"
+        android:padding="5dp"
+
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
